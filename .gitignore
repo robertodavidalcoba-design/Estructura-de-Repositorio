@@ -9,9 +9,17 @@ env/
 .env
 
 # Datos y outputs pesados (ajustá según tu caso)
-data/*.csv
-outputs/*.png
-outputs/*.jpg
+data/**
+!data/.gitkeep
+outputs/**
+!outputs/.gitkeep
+
+# Modelos entrenados (si aplica)
+*.pt
+*.pth
+*.h5
+*.pkl
+
 
 # Archivos del sistema
 .DS_Store
