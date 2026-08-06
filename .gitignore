@@ -8,10 +8,18 @@ venv/
 env/
 .env
 
-# Datos y outputs pesados (ajustá según tu caso)
-data/**
+# Credenciales (crítico)
+*.token
+*token*
+*.pat
+secrets.json
+.env*
+**/config/secrets*
+
+# Datos y outputs pesados
+data/*
 !data/.gitkeep
-outputs/**
+outputs/*
 !outputs/.gitkeep
 
 # Modelos entrenados (si aplica)
